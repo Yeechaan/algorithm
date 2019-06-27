@@ -22,9 +22,8 @@ public class algo2007 {
             	textPattern = text.substring(0, i+1);
             	j = i+1;
             	textTemp = text.substring(j, j+i+1);
-                System.out.println("#"+textPattern);
-
-                System.out.println("#"+textTemp);
+                //System.out.println("#"+textPattern);
+                //System.out.println("#"+textTemp);
 
                 i++;
             }
