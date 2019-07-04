@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class algo_1 {
 
-	public static void main(String []args) throws Exception {
+    public static void main(String []args) throws Exception {
 		
-		Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int T;
         T=sc.nextInt();
  
@@ -27,6 +27,5 @@ public class algo_1 {
                 System.out.println("#"+test_case+" "+result);
             }
         }
-		
-	}
+    }
 }
