@@ -32,7 +32,6 @@ public class algo_1946 {
 				}
 				k++;
 			}
-			
 			System.out.println("#" + i + "\n" + res);
 		}
 		
