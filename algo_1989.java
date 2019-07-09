@@ -15,6 +15,7 @@ public class algo_1 {
             String text = sc.next();
             char[] arr = text.toCharArray();
             int result = 1;
+		
             for(int i=0; i<(text.length()/2);i++) {
                 if(arr[i]!=arr[arr.length-i-1]) {
                 	result = 0;
