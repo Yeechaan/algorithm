@@ -23,13 +23,11 @@ public class algo_1979 {
 			System.out.println("#" + testCase + " " + count);
 		}
 	}
-	
 	public static int getCount(int[][] p, int n, int k) {
 		int count=0;
 		
 		for(int i=0 ; i<n ; i++) {
 			int size=1;
-			
 			//horizontal
 			for(int j=0 ; j<n-1 ; j++) {
 				
@@ -92,7 +90,6 @@ public class algo_1979 {
 				}
 			}
 		}
-		
 		return count;
 	}
 }
