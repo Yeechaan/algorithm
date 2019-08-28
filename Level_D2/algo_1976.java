@@ -30,7 +30,6 @@ public class algo_1976 {
 		sc.close();
 	}
 }
-
 /*
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -59,9 +58,6 @@ public class Solution {
              
             System.out.printf("#%d %d %d\n", t+1, hour, minute);
         }
-         
-         
-         
         br.close();
     }   // end of main
 }
