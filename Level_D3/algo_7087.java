@@ -9,6 +9,8 @@ public class algo_7087 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int test = Integer.parseInt(br.readLine());
 		
+		long beforeTime = System.currentTimeMillis();
+		
 		for(int i=1 ; i<=test ; i++) {
 			int num = Integer.parseInt(br.readLine());
 			int[] title = new int[num];
@@ -17,29 +19,36 @@ public class algo_7087 {
 			for(int j=0 ; j<num ; j++) {
 				String words = br.readLine();
 				title[j] = (int) words.charAt(0);
-				//System.out.println("# " + (char)title[j]);
 			}
 			
 			int check = 65;
-			int j=0, k;
+			int j=0, k, flag=0, temp;
 			
-			while(j<num) {
+			while(j<num && flag==0) {
 				for(k=j+1 ; k<num ; k++) {
 					if(title[j] > title[k]) {
-						int temp = title[j];
+						temp = title[j];
 						title[j] = title[k];
 						title[k] = temp;
 					}
 				}
+				
 				if(title[j] == check) {
-					//System.out.println("@ " + (char)title[j]);
 					count++;
 					check++;
+				} 
+				else if(title[j] != check-1) {
+					flag = 1;
 				}
-				
 				j++;
+				
 			}	
 			System.out.println("#" + i + " " + count);
 		}
+		
+		long afterTime = System.currentTimeMillis();
+		long secDiff = (afterTime - beforeTime);
+		System.out.println("#Total time : " + secDiff);
+		
 	}
 }
