@@ -29,7 +29,6 @@ public class algo_05 {
 				count = count + pre_count;
 				pre_count--;
 			}
-			
 		}
 		return count;
 	}
