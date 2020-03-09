@@ -1,8 +1,8 @@
-package algo0624;
 import java.util.Scanner;
 
 public class algo_1948 {
 	public static void main(String []args) {
+
 		Scanner sc = new Scanner(System.in);
 		int test = sc.nextInt();
 		
@@ -46,5 +46,6 @@ public class algo_1948 {
 			}
 			System.out.println("#" + i + " " + diffDay);		
 		}
+		sc.close();
 	}
 }
