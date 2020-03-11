@@ -23,15 +23,12 @@ public class algo_1270 {
 					if(nu == nums[k][0]) {
 						nums[k][1] +=1;
 						en = 1;
-						//System.out.println("기존" + nums[k][0] + " " + nums[k][1]);
-						//k = count;
 					}
 					k++;
 				}
 				if(en == 0) {
 					nums[count][0] = nu;
 					nums[count][1] = 1;
-					//System.out.println("추가"+nums[count][0] + " " + nums[count][1]);
 					count++;
 					
 				}
