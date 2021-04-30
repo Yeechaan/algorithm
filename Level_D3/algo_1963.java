@@ -2,7 +2,7 @@ package algo_D3;
 
 import java.util.Scanner;
 
-public class algo_1963 {
+class algo_1963 {
 	public static void main(String []args) {
 		Scanner sc = new Scanner(System.in);
 		int test = sc.nextInt();
@@ -13,10 +13,10 @@ public class algo_1963 {
 			int ans, ansCount, maxCount=0;
 			int[] ansRight = new int[n];
 			
-			//»ç¶÷ ¼ö ¸¸Å­ ¹Ýº¹ÇÑ´Ù.
+			//ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½Å­ ï¿½Ýºï¿½ï¿½Ñ´ï¿½.
 			for(int j=0 ; j<n ; j++) {
 				ansCount = 0;
-				//¹®Á¦ ¼ö ¸¸Å­ ¹Ýº¹ÇÑ´Ù.
+				//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½Å­ ï¿½Ýºï¿½ï¿½Ñ´ï¿½.
 				for(int k=0 ; k<m ; k++) {
 					ans = sc.nextInt();
 					if(ans == 1) {

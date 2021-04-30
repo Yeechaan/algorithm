@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class algo_4299 {
+class algo_4299 {
 	public static void main(String []args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int test = Integer.parseInt(br.readLine());

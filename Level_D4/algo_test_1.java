@@ -3,7 +3,7 @@ package algo_D3;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class algo_test_1 {
+class algo_test_1 {
 	
 	public static int[] getTwoSum(int[] nums, int target){
 		//exception process

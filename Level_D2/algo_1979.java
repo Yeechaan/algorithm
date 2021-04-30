@@ -2,7 +2,7 @@ package algo0624;
 
 import java.util.Scanner;
 
-public class algo_1979 {
+class algo_1979 {
 
 	public static void main(String []args) {
 		Scanner scanner = new Scanner(System.in);

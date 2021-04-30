@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class algo_9480 {
+class algo_9480 {
 	static public int count;
 	static public ArrayList<String> words;
 

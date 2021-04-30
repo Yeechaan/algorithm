@@ -2,7 +2,7 @@ package algo_D3;
 
 import java.util.Scanner;
 
-public class algo_6692 {
+class algo_6692 {
 	public static void main(String []args) throws Exception{
 		Scanner sc = new Scanner(System.in);
 

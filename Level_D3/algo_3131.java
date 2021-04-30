@@ -1,6 +1,6 @@
 package algo_D3;
 
-public class algo_3131 {
+class algo_3131 {
 	
 	public static void main(String[] args) {
 		

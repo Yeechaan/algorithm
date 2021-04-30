@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class algo_2817_better {
+class algo_2817_better {
 	static int n,k;
     static int[] arr;
     public static void main(String[] args) throws IOException{
@@ -34,9 +34,9 @@ public class algo_2817_better {
             return;
         }
         if(sum>k || idx>=n) return;
-        // ÀÚ±â ÀÚ½ÅÀ» Æ÷ÇÔ
+        // ï¿½Ú±ï¿½ ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         solve(idx+1,sum+arr[idx]);
-        // ÀÚ±â ÀÚ½ÅÀ» ¹ÌÆ÷ÇÔ
+        // ï¿½Ú±ï¿½ ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         solve(idx+1,sum);
     }
 }

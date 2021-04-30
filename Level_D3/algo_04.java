@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class algo_04 {
+class algo_04 {
 	public static int getCustomSortedArray(ArrayList<Integer> nums) {
 		int count=0, left=0, right=nums.size()-1, left_num, right_num;
 		

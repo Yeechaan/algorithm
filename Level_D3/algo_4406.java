@@ -3,7 +3,7 @@ package algo_D3;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class algo_4406 {
+class algo_4406 {
 	public static void main(String []args) throws Exception{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int test = Integer.parseInt(br.readLine());

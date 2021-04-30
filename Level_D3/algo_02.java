@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class algo_02 {
+class algo_02 {
 	public static int getSimpleMaxDifference(ArrayList<Integer> arr) {
 		int res=-1, size=arr.size(), max_num=0, max_index=-1, next_num=0, next_index=-1, min_num;
 		

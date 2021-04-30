@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class algo_9280 {
+class algo_9280 {
 	public static void main(String []args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int tc = Integer.parseInt(br.readLine());
@@ -33,11 +33,11 @@ public class algo_9280 {
 			for(int j=0 ; j<2*motor ; j++) {
 				order = Integer.parseInt(br.readLine());
 				
-				//3-2. ¾ç¼öÀÌ¸é,
+				//3-2. ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½,
 				if(order > 0) {
 					order = order - 1;
 					
-					//3-2-1. ºó °ø°£ÀÌ ÀÖÀ¸¸é,
+					//3-2-1. ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,
 					if(size < number) {
 						int k=0;
 						while(k<number) {
@@ -51,13 +51,13 @@ public class algo_9280 {
 						size++;
 
 					}
-					//3-2-2. ¾øÀ¸¸é,
+					//3-2-2. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,
 					else {
 						q.add(order);
 					}
 				}
 				
-				//3-3. À½¼öÀÌ¸é,
+				//3-3. ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½,
 				else {
 					order = order * -1;
 					order = order - 1;

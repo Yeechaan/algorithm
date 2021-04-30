@@ -23,7 +23,7 @@ class Result {
 
 }
 
-public class algo_test {
+class algo_test {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 

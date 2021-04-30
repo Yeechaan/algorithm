@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class algo_5948 {
+class algo_5948 {
 	public static void main(String []args) throws Exception, IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int test = Integer.parseInt(br.readLine());

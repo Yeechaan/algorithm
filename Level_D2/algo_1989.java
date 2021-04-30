@@ -2,7 +2,7 @@ package algo0624;
 
 import java.util.Scanner;
 
-public class algo_1 {
+class algo_1 {
 
     public static void main(String []args) throws Exception {
 		

@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class algo_7675 {
+class algo_7675 {
 	public static void main(String []args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
@@ -26,7 +26,7 @@ public class algo_7675 {
 				char end = sentence.charAt(sentence.length()-1);
 				
 				if(Character.isUpperCase(start) == true) {
-					//¸¶Áö¸· ¹®ÀÚ Àü±îÁö ºñ±³ÇÑ´Ù.
+					//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ´ï¿½.
 					while(k<sentence.length()-1 && Character.isLowerCase(sentence.charAt(k))) {
 						k++;
 					}

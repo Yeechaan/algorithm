@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class algo_8998 {
+class algo_8998 {
 	
 	public void sort(int[][] data, int l, int r){
         int left = l;

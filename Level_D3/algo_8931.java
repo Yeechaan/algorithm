@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
 
-public class algo_8931 {
+class algo_8931 {
 
     // Pushing element on the top of the stack 
     static void stack_push(Stack<Integer> stack) 

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class algo_01 {
+class algo_01 {
 	
 	public static int getCollision(ArrayList<Integer> arr, int pos) {
 		int count=0, size=arr.size(), pos_speed=arr.get(pos);

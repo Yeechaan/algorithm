@@ -3,7 +3,7 @@ package algo0624;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class algo_1270 {
+class algo_1270 {
 	public static void main(String []args) {
 		Scanner sc = new Scanner(System.in);
 		int test = sc.nextInt();

@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class algo_05 {
+class algo_05 {
 	public static long getCommonPrefixLength(String word) {
 		long size=word.length(), count=size;
 		int j=0, k, pre_count=0;

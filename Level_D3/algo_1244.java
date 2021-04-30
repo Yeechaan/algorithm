@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class algo_1244 {
+class algo_1244 {
 
 	static StringBuilder sb = new StringBuilder();
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class algo_03 {
+class algo_03 {
 	public static int getMinimumStartValue(ArrayList<Integer> nums) {
 		int size=nums.size(), running_sum=1;
 		

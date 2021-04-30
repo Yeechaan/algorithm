@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class algo_2806 {
+class algo_2806 {
 	static int ans, n;
 	static int[] col;
 	
