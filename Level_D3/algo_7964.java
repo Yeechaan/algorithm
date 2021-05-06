@@ -60,7 +60,7 @@ import java.util.StringTokenizer;
  
 class Solution {
  
-    public static void main(String[] args) throws Exception{
+    public static void greedy.main(String[] args) throws Exception{
  
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;

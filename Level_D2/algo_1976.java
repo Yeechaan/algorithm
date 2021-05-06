@@ -36,7 +36,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
  
 class Solution {
-    public static void main(String[] args) throws Exception {
+    public static void greedy.main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
          
         int T = Integer.parseInt(br.readLine().trim());
@@ -59,6 +59,6 @@ class Solution {
             System.out.printf("#%d %d %d\n", t+1, hour, minute);
         }
         br.close();
-    }   // end of main
+    }   // end of greedy.main
 }
 */
