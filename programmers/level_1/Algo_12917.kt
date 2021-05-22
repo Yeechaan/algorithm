@@ -3,7 +3,7 @@ package algorithm.programmers.level_1
 fun main(args: Array<String>) {
 
     fun solution(s: String): String = run {
-        s.toCharArray().sorted().joinToString("")
+        s.toCharArray().sortedDescending().joinToString("")
     }
 
 
