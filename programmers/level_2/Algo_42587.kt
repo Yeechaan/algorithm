@@ -5,8 +5,6 @@ import java.util.*
 fun main() {
     fun solution(priorities: IntArray, location: Int): Int {
         var answer = 1
-        var addStatus = false
-        val printerResult = mutableListOf<Int>()
 
         val priorityQueue: Queue<Pair<Int, Int>> = LinkedList<Pair<Int, Int>>()
         priorities.mapIndexed { index, priority ->
@@ -15,27 +13,15 @@ fun main() {
 
         while (priorityQueue.isNotEmpty()) {
             val currentValue = priorityQueue.poll()
-            if (priorityQueue.isEmpty()) printerResult.add(currentValue.first)
 
-            for (it in priorityQueue) {
-                if (currentValue.second < it.second) {
-                    addStatus = true
+            if (priorityQueue.any { currentValue.second < it.second }) {
+                priorityQueue.add(currentValue)
+            } else {
+                if (currentValue.first == location) {
                     break
+                } else {
+                    answer += 1
                 }
-
-                if (priorityQueue.last().first == it.first) {
-                    printerResult.add(currentValue.first)
-                }
-            }
-
-            if (addStatus) priorityQueue.add(currentValue)
-            addStatus = false
-        }
-
-        printerResult.forEachIndexed { index, i ->
-            if (i == location) {
-                answer = index
-                return@forEachIndexed
             }
         }
 
