@@ -1,25 +1,12 @@
 package algorithm.programmers.level_2
 
 fun main() {
-    fun solution(numbers: IntArray): String {
-        var stringNumbers = arrayOf<String>()
-        numbers.map {
-            stringNumbers += it.toString()
-        }
+    fun solution(numbers: IntArray) = run {
+        val answer = numbers.sortedWith { first, second ->
+            "$second$first".compareTo("$first$second")
+        }.joinToString("")
 
-        stringNumbers.sortWith { first, second ->
-            if (first.length == second.length) {
-                second.compareTo(first)
-            } else {
-                (second + first).compareTo(first + second)
-            }
-        }
-
-        if (stringNumbers[0] == "0") {
-            return "0"
-        }
-
-        return stringNumbers.joinToString("")
+        if (answer.startsWith("0")) "0" else answer
     }
 
     val result = solution(intArrayOf(3, 30, 34, 5, 9))
