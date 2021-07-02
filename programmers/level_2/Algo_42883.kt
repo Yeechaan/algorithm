@@ -25,4 +25,4 @@ fun main() {
     val result = solution("4177252841", 4)
 
     println(result)
-}†
+}
