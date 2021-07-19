@@ -13,4 +13,4 @@ fun main() {
 
     val result = solution(intArrayOf(2, 3, 1, 5))
     println(result)
-}†
+}
