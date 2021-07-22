@@ -28,4 +28,4 @@ fun main() {
 
     val result = solution(5, intArrayOf(3, 4, 4, 6, 1, 4, 4))
     println(result.toList().toString())
-}†
+}
