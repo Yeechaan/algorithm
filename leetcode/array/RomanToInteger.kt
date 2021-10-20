@@ -28,7 +28,6 @@ fun main() {
                     continue
                 }
             }
-
             answer += romanIntegerMap[currentChar]!!
             i++
         }
