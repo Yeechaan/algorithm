@@ -43,5 +43,4 @@ fun main() {
     )
 
     println(result)
-
 }
