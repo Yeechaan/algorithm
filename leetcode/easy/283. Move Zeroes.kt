@@ -2,14 +2,16 @@ package algorithm.leetcode.easy
 
 fun main() {
     fun moveZeroes(nums: IntArray): Unit {
-        for (i in nums.indices) {
-            if (nums[i] == 0) {
-                for (j in i until nums.size - 1) {
-                    val temp = nums[j + 1]
-                    nums[j + 1] = nums[j]
-                    nums[j] = temp
-                }
+        var left = 0
+        var right = 0
+        while (right < nums.size) {
+            if (nums[right] != 0) {
+                val temp = nums[left]
+                nums[left] = nums[right]
+                nums[right] = temp
+                left++
             }
+            right++
         }
     }
 
