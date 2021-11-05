@@ -14,7 +14,7 @@ fun main() {
     )
 
     fun letterCombinations(digits: String): List<String> {
-        var answer = mutableListOf<String>()
+        val answer = mutableListOf<String>()
         if (digits.isEmpty()) return answer
         var word: String = ""
 
@@ -30,6 +30,7 @@ fun main() {
             }
         }
         dfs(0)
+
         return answer
     }
 
