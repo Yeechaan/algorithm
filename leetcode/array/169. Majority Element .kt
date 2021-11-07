@@ -10,18 +10,9 @@ fun main() {
             } ?: countNumbers.put(it, 1)
         }
 
-        var maxCountNumber = Int.MIN_VALUE
-        var maxCount = Int.MIN_VALUE
-        countNumbers.map { (key, value) ->
-            if (value > maxCount) {
-                maxCount = value
-                maxCountNumber = key
-            }
-        }
-
-        return  maxCountNumber
+        return  countNumbers.maxOfOrNull { it.key } ?: 0
     }
 
-    val result = majorityElement(intArrayOf(3,3,4))
+    val result = majorityElement(intArrayOf(3,4,4))
     println(result)
 }
