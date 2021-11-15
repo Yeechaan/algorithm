@@ -19,7 +19,7 @@ fun main() {
 
         for(i in 1 .. A.size) {
             val answer = mutableListOf<List<String>>()
-            combination(answer, A.toList(), Array<Boolean>(A.size) { false }, 0,  i)
+            combination(answer, A.toList(), Array(A.size) { false }, 0,  i)
 
             answer.forEach { list ->
                 var text = ""
