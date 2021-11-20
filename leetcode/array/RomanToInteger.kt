@@ -11,6 +11,9 @@ fun main() {
         'M' to 1000
     )
 
+    val divideNumbers = arrayListOf('I', 'X', 'C')
+    val expectationNumbers = arrayListOf("IV", "IX", "XL", "XC", "CD", "CM")
+
     fun romanToInt(s: String): Int {
         var answer = 0
         var i = 0
@@ -18,16 +21,17 @@ fun main() {
         while (i < s.length) {
             val currentChar = s[i]
 
-            if (i + 1 < s.length && (currentChar == 'I' || currentChar == 'X' || currentChar == 'C')) {
+            if (i + 1 < s.length && divideNumbers.contains(currentChar)) {
                 val nextChar = s[i + 1]
                 val exceptionNumber = "$currentChar$nextChar"
 
-                if (exceptionNumber == "IV" || exceptionNumber == "IX" || exceptionNumber == "XL" || exceptionNumber == "XC" || exceptionNumber == "CD" || exceptionNumber == "CM") {
+                if (expectationNumbers.contains(exceptionNumber)) {
                     answer += (romanIntegerMap[nextChar]!! - romanIntegerMap[currentChar]!!)
                     i += 2
                     continue
                 }
             }
+
             answer += romanIntegerMap[currentChar]!!
             i++
         }
