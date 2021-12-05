@@ -12,6 +12,7 @@ fun main() {
                 else -> return intArrayOf(l + 1, r + 1)
             }
         }
+
         return intArrayOf(-1, -1)
     }
 
